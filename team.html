@@ -3,15 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عن فريق العمل.">
     <title>عن الفريق - التوعية بتسوس الأسنان</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.8;
+        }
+
+        /* Header Section */
+        header {
+            background-image: url('images/dental-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #4caf50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a.active,
+        .navbar a:hover {
+            background-color: #2e7d32;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Team Section */
+        #team h2 {
+            font-size: 1.8rem;
+            color: #4caf50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-content {
+            line-height: 2;
+        }
+
+        .english-text {
+            direction: ltr;
+            text-align: left;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="overlay">
-            <h1>عن الفريق</h1>
+            <h1>التوعية بتسوس الأسنان</h1>
+            <p>تعرف على المراحل المختلفة لتسوس الأسنان وأهمية زيارة طبيب الأسنان.</p>
         </div>
     </header>
 
@@ -25,21 +144,24 @@
         </ul>
     </nav>
 
-    <!-- Team Content -->
-    <main class="container">
-        <p><strong>Web Developer:</strong> Mostafa Adel</p>
-        <p><strong>Brochure Designer:</strong> Mohamed Fahmi</p>
-        <p><strong>Video Editor:</strong> Mohamed Mohamady</p>
-        <h3>Video Participants & Data Collectors:</h3>
-        <ul>
-            <li>Mostafa Gamal</li>
-            <li>Mohamed Ramadan</li>
-            <li>Mohamed Samir</li>
-            <li>Mohamed Noushy</li>
-            <li>Mohamed Elbasty</li>
-            <li>Mohamed Ragab</li>
-            <li>Mohamed Fahmi</li>
-        </ul>
+    <!-- Main Content -->
+    <main id="team" class="container">
+        <h2>عن الفريق</h2>
+        <div class="team-content">
+            <p class="english-text">Web Developer : Mostafa Adel</p>
+            <p class="english-text">Brochure Designer : Mohamed Fahmi</p>
+            <p class="english-text">Video Editor : Mohamed Mohamady</p>
+            <p>مشاركون في الفيديو وجامعو البيانات:</p>
+            <ul>
+                <li>مصطفى جمال</li>
+                <li>محمد رمضان</li>
+                <li>محمد سمير</li>
+                <li>محمد نوحي</li>
+                <li>محمد البستي</li>
+                <li>محمد رجب</li>
+                <li>محمد فهمي</li>
+            </ul>
+        </div>
     </main>
 
     <!-- Footer -->
