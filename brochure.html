@@ -3,15 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الكتيب الخاص بالتوعية بتسوس الأسنان.">
     <title>الكتيب - التوعية بتسوس الأسنان</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.8;
+        }
+
+        /* Header Section */
+        header {
+            background-image: url('images/dental-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #4caf50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a.active,
+        .navbar a:hover {
+            background-color: #2e7d32;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Brochure Section */
+        #brochure h2 {
+            font-size: 1.8rem;
+            color: #4caf50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .brochure-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .brochure-images img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="overlay">
-            <h1>الكتيب</h1>
+            <h1>التوعية بتسوس الأسنان</h1>
+            <p>تعرف على المراحل المختلفة لتسوس الأسنان وأهمية زيارة طبيب الأسنان.</p>
         </div>
     </header>
 
@@ -25,15 +147,18 @@
         </ul>
     </nav>
 
-    <!-- Brochure Content -->
-    <main class="container">
+    <!-- Main Content -->
+    <main id="brochure" class="container">
         <h2>الكتيب</h2>
-        <p>هنا تضع محتوى الكتيب.</p>
+        <div class="brochure-images">
+            <img src="images/brochure1.jpg" alt="صورة الكتيب الأولى">
+            <img src="images/brochure2.jpg" alt="صورة الكتيب الثانية">
+        </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>مبادرة التوعية بتسوس الأسنان تحت إشراف : دكتور داليا</p>
+        <p>مبادرة التوعية بتسوس الأسنان تحت إشراف : دكتور دينا سليمان/p>
     </footer>
 </body>
 </html>
